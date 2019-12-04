@@ -1,0 +1,74 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Indie Flower', cursive, times;
+  background-color: black;
+}
+
+a {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+.image {
+  height: 50%;
+  color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.textBox {
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  font-style: italic;
+  font-size: 50px;
+  border: 5px solid #f1f1f1;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 65%;
+  padding: 20px;
+  text-align: center;
+}
+/*For Tablets*/
+@media only screen and (min-width: 500px) {
+  .textBox {
+    border-radius: 100%;
+    border: solid black;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 80%;
+  }
+
+  a {
+    color: black;
+  }
+
+  a:visited {
+    color: black;
+  }
+}
+/*For Desktop*/
+@media only screen and (min-width: 1024px) {
+  .image {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  body, html {
+    background-color: #d6e5fa;
+  }
+
+  .textBox {
+    width: 45%;
+  }
+}
